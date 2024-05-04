@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World with HTMX</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/nav.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h3 class="logo">Nojiri.dev</h3>
+        <ul class="links">
+            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#projects" onclick="scrollToSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+        </ul>
+        <!-- <img class="menu-icon"
+            src="./resources/icons/menu.svg" 
+            alt="menu" height="25px" width="25px"
+            onclick="toggleMobileMenu()"/> -->
+        <svg class="menu-icon" viewBox="0 0 20 20" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" fill="none" onclick="toggleMobileMenu()">
+            <path fill="#2d2e32" fill-rule="evenodd" d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"/>
+        </svg>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-btn" onclick="closeMobileMenu()">
+            <path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path>
+        </svg>
+
+        <ul class="mobile-links">
+            <li><a href="#home" onclick="mobileScrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="mobileScrollToSection('about')">About</a></li>
+            <li><a href="#projects" onclick="mobileScrollToSection('projects')">Projects</a></li>
+            <li><a href="#contact" onclick="mobileScrollToSection('contact')">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="home" id="home">
+        <h1>Hello World with HTMX</h1>
+        <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>
+        <button class="btn" hx-get="/about">Learn More</button>
+
+    </div>
+    <div class="about" id="about">
+        <h2>About</h2>
+        <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>
+    </div>
+    <div class="projects" id="projects">
+        <h2>Projects</h2>
+        <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>
+    </div>
+    <div class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>
+    </div>
+    <script src="./resources/helper.js"></script>
+</body>
+</html>
