@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World with HTMX</title>
+    <title>Tomohiko Nojiri | Full Stack Developer</title>
     <script src="https://unpkg.com/htmx.org"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/nav.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/home.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <div class="navbar">
@@ -30,7 +34,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-btn" onclick="closeMobileMenu()">
             <path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path>
         </svg>
-
         <ul class="mobile-links">
             <li><a href="#home" onclick="mobileScrollToSection('home')">Home</a></li>
             <li><a href="#about" onclick="mobileScrollToSection('about')">About</a></li>
@@ -39,12 +42,113 @@
         </ul>
     </div>
 
-    <div class="home" id="home">
-        <h1>Hello World with HTMX</h1>
-        <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>
-        <button class="btn" hx-get="/about">Learn More</button>
+    <section class="home" id="home">
+        <div class="home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Full Stack Developer <img height="60px" width="60px" src="./resources/media/wave.png"></h1>
+                    <p>Hi, I'm Tomohiko Nojiri, a passionate Full Stack Developer based in Sydney, Australia. 🇦🇺</p>
+                    <span class="home-link-icons">
+                        <a class="home-link-icon" aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/tomohiko-nojiri-abaaa623b">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg>
+                        </a>
+                        <a class="home-link-icon" aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/tomohikoNojiri415">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg>
+                        </a>
+                    </span>
+                </div>
+                <div class="home-photo">
+                    <div class="box"><img src="./resources/media/avatar.jpeg" alt="Photo" class="home-photo-img"></div>
 
-    </div>
+                    <!-- <img class="avatar-image" src="./resources/media/avatar.jpeg" alt="Photo" class="home-photo-img"> -->
+                </div>
+            </div>
+            <div class="home-skills">
+                <div class="home-skills-section">
+                    <div class="home-skills-title"> Front End Stack</div>
+                    <div class="home-skills-divider"></div>
+                    <div class="home-skills-icons">
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-skills-section">
+                    <div class="home-skills-title"> Back End Stack</div>
+                    <div class="home-skills-divider"></div>
+                    <div class="home-skills-icons">
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                        <div class="home-skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="about" id="about">
         <h2>About</h2>
         <p>HTMX is a javascript library that allows you to access AJAX, WebSockets and Server Sent Events directly in HTML.</p>

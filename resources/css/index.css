@@ -15,13 +15,6 @@ body {
     position:relative
 }
 
-.home {
-    background-color: #f9f9f9;
-    padding: 100px 0;
-    text-align: center;
-    height: 100vh;
-}
-
 .about {
     background-color: blue;
     padding: 100px 0;
