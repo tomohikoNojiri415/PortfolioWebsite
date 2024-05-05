@@ -113,6 +113,8 @@
 .home-skills-icon:hover {
     transform: translateY(-5px); 
 }
+
+/* https://www.ibelick.com/blog/create-animated-gradient-borders-with-css */
 .box {
     display: flex;
     justify-content: center;
