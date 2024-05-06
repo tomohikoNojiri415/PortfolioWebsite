@@ -46,8 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = modal.querySelector('img'); 
       const imageName = icon.getAttribute('data-image-name');
       img.src = `./resources/media/${imageName}.png`; 
-
-      // Display the corresponding modal
       modal.style.display = 'block';
     });
   });
